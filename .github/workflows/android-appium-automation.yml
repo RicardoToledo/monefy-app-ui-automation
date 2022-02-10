@@ -4,6 +4,9 @@ name: Appium automation for Monefy Android app
 on:
   pull_request:
     branches: [ main ]
+defaults:
+  run:
+    working-directory: Task-2
 jobs:
   automation-flow:
     runs-on: macos-latest
@@ -15,8 +18,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.22.8
-    - name: Move to code folder
-      run: cd Task-2
     - name: Install dependencies
       run: npm install
     - name: Install and Run Appium Server
