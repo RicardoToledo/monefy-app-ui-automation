@@ -1,0 +1,30 @@
+name: Appium automation for Monefy Android app
+
+# Runs on pull requests
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  automation-flow:
+    runs-on: macos-latest
+    name: Appium Test
+    steps:
+      - name: Repository checkout
+        uses: actions/checkout@v2
+      - name: Setup node
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12.22.8
+      - name: Install dependencies
+        run: npm install
+      - name: Install and Run Appium Server
+        run: |
+          npm install -g appium
+          appium -v
+          appium &>/dev/null &
+      - name: Run tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          profile: Nexus 6
+          script: npm run android-end2end
