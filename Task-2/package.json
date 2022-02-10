@@ -1,0 +1,23 @@
+{
+    "name": "sqehome_challenge",
+    "version": "1.0.0",
+    "description": "Automated End-to-End test suite for Monefy Android application",
+    "scripts": {
+        "android-end2end": "wdio ./config/android.config.js --suite end2end"
+    },
+    "author": "Ricardo Toledo",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.17.0",
+        "@babel/core": "^7.17.0",
+        "@babel/preset-env": "^7.16.11",
+        "@babel/register": "^7.17.0",
+        "@faker-js/faker": "^6.0.0-alpha.5",
+        "@wdio/cli": "^7.16.14",
+        "@wdio/local-runner": "^7.16.14",
+        "@wdio/mocha-framework": "^7.16.14",
+        "@wdio/selenium-standalone-service": "^7.16.14",
+        "@wdio/spec-reporter": "^7.16.14",
+        "wdio-wait-for": "^2.2.1"
+    }
+}
