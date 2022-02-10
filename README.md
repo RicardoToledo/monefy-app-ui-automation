@@ -6,8 +6,7 @@ Repository containing exploratory testing for [Monefy](https://itunes.apple.com/
 
 TOC
 
-## Exploratory testing charters
-to document your testing. You can use simple format of:
+## Exploratory testing charters to document your testing. You can use simple format of:
 Explore target, with resources, to discover information
 
 ### Findings from your charters. Did everything work as expected? What bugs were discovered?
