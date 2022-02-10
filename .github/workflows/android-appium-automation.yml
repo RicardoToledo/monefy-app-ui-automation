@@ -28,6 +28,7 @@ jobs:
     - name: Run tests
       uses: reactivecircus/android-emulator-runner@v2
       with:
+        working-directory: Task-2
         api-level: 29
         profile: Nexus 6
         script: npm run android-end2end
