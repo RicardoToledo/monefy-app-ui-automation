@@ -48,9 +48,9 @@ $ npm run android-end2end
 
 The project integrates [GitHub Actions](https://github.com/features/actions) as its CI/CD platform.
 
-A workflow is already integrated into this repo which automates a full test run in an [Ubuntu](https://ubuntu.com/) virtual machine every time a pull request is created for the `main` branch.
+A workflow is already integrated into this repo which automates a full test run in a macOS virtual machine every time a pull request is created for the `main` branch.
 
-The `.yml` file with the setup can be found in this repo's path: [.github/workflows/ui-test-automation.yml](.github/workflows/ui-test-automation.yml)
+The `.yml` file with the setup can be found in this repo's path: [.github/workflows/android-appium-automation.yml](.github/workflows/android-appium-automation.yml)
 
 # Approach for solving the problem
 
